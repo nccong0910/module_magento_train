@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+            <add id="Magetop_Helloworld::menu_title" title="Magetop Module" module="Magetop_Helloworld" sortOrder="20" resource="Magetop_Helloworld::title_menu" />
+            <add id="Magetop_Helloworld::manage_posts" title="Magetop Helloworld" module="Magetop_Helloworld" sortOrder="1" parent="Magetop_Helloworld::menu_title" action="hellomenu/posts/index" resource="Magetop_Helloworld::manage_posts" />
+            <add id="Magetop_Helloworld::module_config" title="Module Configuration" module="Magetop_Helloworld" sortOrder="2" parent="Magetop_Helloworld::menu_title" action="adminhtml/system_config/edit/section/helloworld" resource="Magetop_Helloworld::configuration"/>
+    </menu>
+</config>
